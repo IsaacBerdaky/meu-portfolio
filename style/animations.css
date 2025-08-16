@@ -1,0 +1,240 @@
+@keyframes slide-right {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-left {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pendulum {
+
+    0%,
+    100% {
+        transform: translateX(0px) translateY(0px) rotate(0deg);
+    }
+
+    25% {
+        transform: translateX(-12px) translateY(-8px) rotate(-3deg);
+    }
+
+    50% {
+        transform: translateX(8px) translateY(-15px) rotate(3deg);
+    }
+
+    75% {
+        transform: translateX(-5px) translateY(-10px) rotate(-1.5deg);
+    }
+}
+
+@keyframes subtle-pulse {
+
+    0%,
+    100% {
+        text-shadow: 0 0 5px currentColor;
+        transform: scale(1);
+    }
+
+    50% {
+        text-shadow:
+            0 0 5px currentColor,
+            0 0 10px currentColor;
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+.word-reveal .word {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px) rotateX(90deg);
+    animation: wordReveal 0.6s ease-out forwards;
+}
+
+.word-reveal .word:nth-child(1) { animation-delay: 0.1s; }
+.word-reveal .word:nth-child(2) { animation-delay: 0.2s; }
+.word-reveal .word:nth-child(3) { animation-delay: 0.3s; }
+.word-reveal .word:nth-child(4) { animation-delay: 0.4s; }
+.word-reveal .word:nth-child(5) { animation-delay: 0.5s; }
+.word-reveal .word:nth-child(6) { animation-delay: 0.6s; }
+.word-reveal .word:nth-child(7) { animation-delay: 0.7s; }
+.word-reveal .word:nth-child(8) { animation-delay: 0.8s; }
+.word-reveal .word:nth-child(9) { animation-delay: 0.9s; }
+.word-reveal .word:nth-child(10) { animation-delay: 1.0s; }
+.word-reveal .word:nth-child(11) { animation-delay: 1.1s; }
+.word-reveal .word:nth-child(12) { animation-delay: 1.2s; }
+.word-reveal .word:nth-child(13) { animation-delay: 1.3s; }
+.word-reveal .word:nth-child(14) { animation-delay: 1.4s; }
+.word-reveal .word:nth-child(15) { animation-delay: 1.5s; }
+.word-reveal .word:nth-child(16) { animation-delay: 1.6s; }
+.word-reveal .word:nth-child(17) { animation-delay: 1.7s; }
+.word-reveal .word:nth-child(18) { animation-delay: 1.8s; }
+.word-reveal .word:nth-child(19) { animation-delay: 1.9s; }
+.word-reveal .word:nth-child(20) { animation-delay: 2.0s; }
+.word-reveal .word:nth-child(21) { animation-delay: 2.1s; }
+.word-reveal .word:nth-child(22) { animation-delay: 2.2s; }
+.word-reveal .word:nth-child(23) { animation-delay: 2.3s; }
+.word-reveal .word:nth-child(24) { animation-delay: 2.4s; }
+.word-reveal .word:nth-child(25) { animation-delay: 2.5s; }
+.word-reveal .word:nth-child(26) { animation-delay: 2.6s; }
+.word-reveal .word:nth-child(27) { animation-delay: 2.7s; }
+.word-reveal .word:nth-child(28) { animation-delay: 2.8s; }
+.word-reveal .word:nth-child(29) { animation-delay: 2.9s; }
+.word-reveal .word:nth-child(30) { animation-delay: 3.0s; }
+.word-reveal .word:nth-child(31) { animation-delay: 3.1s; }
+.word-reveal .word:nth-child(32) { animation-delay: 3.2s; }
+.word-reveal .word:nth-child(33) { animation-delay: 3.3s; }
+.word-reveal .word:nth-child(34) { animation-delay: 3.4s; }
+.word-reveal .word:nth-child(35) { animation-delay: 3.5s; }
+.word-reveal .word:nth-child(36) { animation-delay: 3.6s; }
+.word-reveal .word:nth-child(37) { animation-delay: 3.7s; }
+.word-reveal .word:nth-child(38) { animation-delay: 3.8s; }
+.word-reveal .word:nth-child(39) { animation-delay: 3.9s; }
+.word-reveal .word:nth-child(40) { animation-delay: 4.0s; }
+
+
+@keyframes wordReveal {
+    0% {
+        opacity: 0;
+        transform: translateY(20px) rotateX(90deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) rotateX(0deg);
+    }
+}
+
+
+.fade-in-1 {
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out 0s forwards;
+        }
+
+        .fade-in-2 {
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out 0.5s forwards;
+        }
+
+        .fade-in-3 {
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out 1s forwards;
+        }
+
+        .fade-in-4 {
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out 1.5s forwards;
+        }
+
+        .fade-in-5 {
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out 2s forwards;
+        }
+
+        .fade-in-6 {
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out 2.5s forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+.typing-text {
+    font-size: 2.5rem;
+    color: #fff;
+    border-right: 3px solid #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 1.2s steps(30, end), blink-cursor 0.8s infinite;
+}
+
+.typing-text2 {
+    font-size: 2.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 1.2s steps(30, end);
+}
+
+ .slideup-fade {
+            opacity: 0;
+            animation: slideInFade 1s ease-out forwards;
+        }
+
+         .slideup-fade2 {
+            opacity: 0;
+            animation: slideInFade 1s ease-out 0.3s forwards;
+        }
+
+        
+        @keyframes slideInFade {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-cursor {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #fff;
+    }
+}
+
+
+.slide-left {
+    animation: slide-left 1s ease-out 1s forwards;
+}
+
+.slide-right {
+    animation: slide-right 1s ease-out 1s forwards;
+}
+
+.pendulum {
+    animation: pendulum 10s ease-in-out infinite;
+}
+
+.subtle-pulse {
+    animation: subtle-pulse 5s ease-in-out infinite;
+}
