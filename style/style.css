@@ -130,6 +130,7 @@ section {
 
 /* Section 2 - Sobre Mim */
 #s2 {
+    height: auto;
     background-color: black;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url('../images/earthBackground.png');
@@ -282,13 +283,14 @@ section {
 }
 
 .skills {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     width: 20%;
     height: 80%;
-    border-radius: 40px;
+    border-radius: 25px;
     border: 2px solid #fff;
     transition: transform 0.3s ease;
 
@@ -307,8 +309,8 @@ section {
 
 .skills-item-bubble {
     margin-top: 25px;
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
     background-color: #425679;
     border-radius: 50%;
     display: flex;
@@ -605,7 +607,7 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 }
 
 .slide-overlay h3 {
-    font-size: 22px;
+    font-size: 25px;
     margin-bottom: 10px;
     transform: translateY(20px);
     opacity: 0;
@@ -613,7 +615,7 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 }
 
 .slide-overlay p {
-    font-size: 14px;
+    font-size: 18px;
     transform: translateY(20px);
     opacity: 0;
     transition: all 0.3s ease 0.2s;
@@ -641,4 +643,466 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     background-attachment: fixed;
     font-family: 'Archivo Black', sans-serif;
     color: white;
+    position: relative;
+}
+
+#center8 {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+    width: 100%;
+    padding: 2rem;
+}
+
+#contact-me-container {
+    float: left;
+    width:  100%;
+    height: 95%;
+    font-family:'Josefin Sans', sans-serif
+}
+
+#contact-me-container h1 {
+    font-size: 52px;
+    color: #B121FF;
+}
+#contact-me-container h2 {
+    font-size: 32px;
+    color: #F800BA;
+
+}
+
+#contact-me-container h1,h2 {
+    margin: 0px;
+}
+
+#contact-me-contatos {
+    margin-top: 10%;
+    font-size: 27px;
+    color: #B121FF;
+}
+
+#contact-me-contatos .rosinha {
+    margin-left: 10%;
+    color: #F800BA;
+}
+
+#s8 img {
+    position: absolute; 
+    bottom: 0; 
+    left: 10px;
+    height: 150px;
+    width: 150px;
+    transform: scaleX(-1)
+}
+
+/* MEDIA QUERIES PARA RESPONSIVIDADE */
+
+/* Tablet - 768px e abaixo */
+@media (max-width: 912px) {
+    
+    body {
+        overflow-x: hidden;
+    }
+
+    section {
+        height: auto;
+    }
+
+    /* Section 2 - Sobre Mim */
+
+    #container_sobremim {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+        padding: clamp(10px, 2.5vw, 15px);
+    }
+    
+    #sobre_mim {
+        text-align: left;
+        width: 100%;
+        order: 2;
+    }
+    
+    #sobre_mim_img {
+        width: min(250px, 80%);
+        height: 350px;
+        order: 1;
+        margin: 0 auto;
+    }
+    
+    #sobre_mim_img img {
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+    }
+    
+    #junior_rotaciona {
+        display: none;
+    }
+    
+    /* Section 3 - Skills */
+    .skills-center {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        padding: 1rem;
+    }
+    
+    .skills {
+        width: 80%;
+        max-width: 300px;
+        height: auto;
+        padding: 20px 0;
+    }
+    
+    .skills:hover {
+        transform: none;
+    }
+    
+    .skills-item-bubble {
+        width: 150px;
+        height: 150px;
+    }
+
+    
+    /* Section 4 - Skills Hard */
+    /* Herda as mesmas configurações da Section 3 */
+    
+    /* Section 5 - Informacional */
+
+    #informacional-me-de-papai {
+        width: 90%;
+    }
+    
+    #astronauta2 {
+        display: none;
+    }
+    
+    #textos-info {
+        position: static;
+        transform: none;
+        font-size: 18px;
+        padding: 10px;
+    }
+    
+    /* Section 6 - Contato Branco */
+    #white-Container {
+        width: 60%;
+                margin: 50px 0 50px 0;
+
+        padding: 20px;
+        gap: 1.5rem;
+    }
+    
+    #title-w-container {
+        width: 70%;
+        font-size: 34px;
+    }
+    
+    #text-w-container {
+        width: 90%;
+        font-size: 25px;
+    }
+    
+    #links-w-container {
+        width: 90%;
+        gap: 40px;
+        height: auto;
+        padding: 20px 0;
+    }
+    
+    #links-w-container img {
+        height: 80px;
+        width: 80px;
+    }
+    
+    /* Section 7 - Projetos */
+    #projetos-center {
+        flex-direction: column;
+        height: 1500px;
+        gap: 20px;
+        padding: 1rem;
+    }
+    
+    #projetos {
+        width: 100%;
+        max-width: 500px;
+        padding: 20px 0;
+    }
+
+    #projetos img {
+        height: auto;
+        width: auto;
+    }
+    
+    .hover-slide {
+        height: 250px;
+    }
+    
+    .slide-overlay h3 {
+        font-size: 30px;
+    }
+    
+    .slide-overlay p {
+        font-size: 23px;
+    }
+    
+    /* Section 8 - Contato Final */
+    #center8 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        
+    }
+    
+    #contact-me-container {
+        float: none;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    #contact-me-container h1 {
+        font-size: 46px;
+    }
+    
+    #contact-me-container h2 {
+        font-size: 34px;
+    }
+    
+    #contact-me-contatos {
+        font-size: 30px;
+        margin-top: 5%;
+    }
+    
+    #contact-me-contatos .rosinha {
+        margin-left: 5%;
+    }
+    
+    #s8 img {
+        position: absolute;
+        display: block;
+        margin: 20px auto 0;
+        transform: none;
+        bottom: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Mobile - 480px e abaixo */
+@media (max-width: 480px) {
+    
+    /* Ajustes gerais */
+    section {
+        height: auto;
+        padding: 0 10px;
+    }
+    
+    /* Section 1 - Hero */
+    #desenvolvedor {
+        bottom: 15px;
+        left: 15px;
+        transform: none;
+        font-size: 0.9rem;
+    }
+    
+    #programador {
+        top: 15px;
+        right: 15px;
+        transform: none;
+        font-size: 0.9rem;
+    }
+    
+    /* Section 2 - Sobre Mim */
+    #sobre_mim_img {
+        width: min(200px, 90%);
+        height: 280px;
+    }
+    
+    #sobre_mim p {
+        text-align: left;
+    }
+    
+    /* Section 3 e 4 - Skills */
+    .skills {
+        width: 90%;
+    }
+    
+    .skills-item-bubble {
+        width: 120px;
+        height: 120px;
+    }
+
+    .skills-item-bubble img {
+        height: 70%;
+    }
+    
+    .skills-text {
+        font-size: 16px;
+    }
+    
+    /* Section 5 - Informacional */
+    #textos-info {
+        font-size: 16px;
+    }
+    
+    .btn-saiba-mais {
+        padding: 15px 40px;
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+    }
+    
+    /* Section 6 - Contato Branco */
+
+    #white-Container {
+        height: auto;
+        margin: 50px 0 50px 0;
+        width: 90%;
+    }
+
+    #title-w-container {
+        font-size: 20px;
+    }
+    
+    #text-w-container {
+        font-size: 16px;
+    }
+    
+    #links-w-container {
+        gap: 50px;
+        
+    }
+    
+    #links-w-container img {
+        height: 60px;
+        width: 60px;
+    }
+    
+    /* Section 7 - Projetos */
+    #projetos {
+        width: 95%;
+    }
+    
+    .hover-slide {
+        height: 200px;
+    }
+    
+    .slide-overlay h3 {
+        font-size: 28px;
+    }
+    
+    .slide-overlay p {
+        font-size: 22px;
+    }
+    
+    /* Section 8 - Contato Final */
+    #contact-me-container h1 {
+        font-size: 28px;
+    }
+    
+    #contact-me-container h2 {
+        font-size: 20px;
+    }
+    
+    #contact-me-contatos {
+        font-size: 16px;
+    }
+    
+    #s8 img {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+/* Mobile muito pequeno - 320px e abaixo */
+@media (max-width: 320px) {
+    
+    /* Section 2 - Sobre Mim */
+    #sobre_mim_img {
+        width: min(180px, 95%);
+        height: 250px;
+    }
+    
+    /* Section 6 - Contato Branco */
+    #white-Container {
+        width: 98%;
+        padding: 15px;
+    }
+    
+    #title-w-container {
+        font-size: 18px;
+    }
+    
+    #text-w-container {
+        font-size: 14px;
+    }
+    
+    /* Section 7 - Projetos */
+    .hover-slide {
+        height: 180px;
+    }
+    
+    .slide-overlay h3 {
+        font-size: 16px;
+    }
+    
+    .slide-overlay p {
+        font-size: 11px;
+    }
+    
+    /* Section 8 - Contato Final */
+    #contact-me-container h1 {
+        font-size: 24px;
+    }
+    
+    #contact-me-container h2 {
+        font-size: 18px;
+    }
+    
+    #contact-me-contatos {
+        font-size: 14px;
+    }
+}
+
+/* Ajustes para orientação paisagem em dispositivos móveis */
+@media (max-width: 768px) and (orientation: landscape) {
+    
+    section {
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    #center, #center2, #center5, #center8 {
+        padding: 1rem;
+    }
+    
+    #container_sobremim {
+        flex-direction: row;
+        gap: 1rem;
+    }
+    
+    #sobre_mim_img {
+        width: min(200px, 30%);
+        height: 300px;
+    }
+    
+    .skills-center, #projetos-center {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .skills, #projetos {
+        width: 45%;
+        max-width: 250px;
+        margin: 10px;
+    }
 }
