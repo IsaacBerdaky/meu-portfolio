@@ -31,6 +31,14 @@
 /* Base Styles */
 * {
     box-sizing: border-box;
+  
+   -webkit-tap-highlight-color: transparent;
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+
 }
 
 body {
@@ -567,8 +575,9 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 
 
 #projetos img {
-    height: auto;
-    width: auto;
+    width: 100%;
+    height: 100%;
+        object-fit: cover;
 }
 
 /* Efeito Slide Reveal */
@@ -835,8 +844,9 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     }
 
     #projetos img {
-        height: auto;
-        width: auto;
+        width: 100%;
+    height: 100%;
+        object-fit: cover;
     }
     
     .hover-slide {
@@ -989,6 +999,12 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     /* Section 7 - Projetos */
     #projetos {
         width: 95%;
+    }
+
+    #projetos img {
+        width: auto;
+    height: auto;
+        object-fit: cover;
     }
     
     .hover-slide {

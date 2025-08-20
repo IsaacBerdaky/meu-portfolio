@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Meus Serviços | ISAAC BERDAKY</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        .nova-round {
+            font-family: 'Nova Round', cursive;
+        }
+
+        .poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .ondinha {
+            clip-path: polygon(100% 100%, 0% 100%, 0.00% 57.67%, 2.00% 57.59%, 4.00% 57.38%, 6.00% 57.02%, 8.00% 56.52%, 10.00% 55.91%, 12.00% 55.18%, 14.00% 54.35%, 16.00% 53.44%, 18.00% 52.46%, 20.00% 51.44%, 22.00% 50.39%, 24.00% 49.33%, 26.00% 48.28%, 28.00% 47.27%, 30.00% 46.31%, 32.00% 45.42%, 34.00% 44.61%, 36.00% 43.91%, 38.00% 43.33%, 40.00% 42.87%, 42.00% 42.55%, 44.00% 42.37%, 46.00% 42.34%, 48.00% 42.45%, 50.00% 42.71%, 52.00% 43.10%, 54.00% 43.63%, 56.00% 44.28%, 58.00% 45.04%, 60.00% 45.89%, 62.00% 46.82%, 64.00% 47.81%, 66.00% 48.85%, 68.00% 49.90%, 70.00% 50.96%, 72.00% 52.00%, 74.00% 53.00%, 76.00% 53.94%, 78.00% 54.81%, 80.00% 55.59%, 82.00% 56.26%, 84.00% 56.81%, 86.00% 57.23%, 88.00% 57.51%, 90.00% 57.65%, 92.00% 57.64%, 94.00% 57.49%, 96.00% 57.20%, 98.00% 56.76%, 100.00% 56.20%);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Olá, curioso de plantão! Eu resolvi tentar usar TailwindCSS nessa página, então peço perdão caso ela fique meio estranha :( -->
+    <!-- Na verdade, meio que ele pode estar um pouco misturado com CSS, mas acho que acontece ksksk -->
+
+    <!-- Primeira Section, Titulo -->
+    <section class="bg-black text-white py-20 px-6 h-dvh flex items-center" id="inicio">
+
+        <div class="max-w-4xl mx-auto text-center">
+            <!-- Título Principal -->
+            <h2 class="text-4xl md:text-5xl font-bold mb-8 slideup-fade">
+                Meus Serviços
+            </h2>
+
+            <!-- Descrição -->
+            <p class="text-lg md:text-xl text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed fade-in-2">
+                Fico feliz que tenha se interessado em meus serviços! Logo
+                abaixo, você pode visualizar a tabela de preços juntamente com
+                alguma demonstração!
+            </p>
+
+            <!-- Informações dos Serviços -->
+            <div class="space-y-4 text-gray-400">
+                <p class="text-lg ">
+                    <a href="#fullstack-section"> <span
+                            class="fade-in-3 hover:text-gray-300 hover:underline transition-all cursor-pointer">FullStack,</span></a>
+                    <a href="#edicao-video-section"><span
+                            class="fade-in-4 hover:text-gray-300 hover:underline transition-all cursor-pointer">Edição
+                            de vídeos</span></a> <a href="#personalizado-section"><span
+                            class="fade-in-5 hover:text-gray-300 hover:underline transition-all cursor-pointer">e
+                            Personalizado</span></a>
+                </p>
+                <p class="text-base underline hover:text-white transition-colors cursor-pointer fade-in-6">
+                    <a data-modal-target="tos-modal" data-modal-toggle="tos-modal">Termos de Serviço</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white h-auto" id="fullstack-section">
+        <div class="max-w-4xl mx-auto mb-8 text-center">
+            <h2 class="nova-round text-3xl md:text-4xl font-bold text-gray-800 mb-4 pt-16">
+                — FULL STACK —
+            </h2>
+            <p class="nova-round text-base md:text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
+                Criação de sites, sistemas e soluções digitais sob medida,
+                unindo o seu design com funcionalidade completa. Você
+                pode escolher somente o Frontend ou o Backend caso deseje!
+            </p>
+        </div>
+        <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden py-6 poppins">
+            <!-- Header da Tabela -->
+            <div class="grid grid-cols-3 bg-gray-50 gap-x-3">
+                <div class="px-6 py-4 bg-gray-500 text-white font-semibold text-center rounded-xl">
+                    Serviço
+                </div>
+                <div class="px-6 py-4 bg-gray-500 text-white font-semibold text-center rounded-xl">
+                    Descrição
+                </div>
+                <div class="px-6 py-4 bg-green-300 text-gray-800 font-semibold text-center rounded-xl">
+                    Preços
+                </div>
+            </div>
+
+            <!-- Linhas da Tabela -->
+            <div class="divide-y divide-gray-500">
+                <!-- Landing Page simples -->
+                <div class="grid grid-cols-3 hover:bg-neutral-200 transition-colors">
+                    <div class="px-6 py-4 font-medium text-gray-900">
+                        Landing Page simples
+                    </div>
+                    <div class="px-6 py-4 text-gray-700">
+                        Página única, responsiva (HTML/CSS/JS)
+                    </div>
+                    <div class="px-6 py-4 text-gray-900 font-semibold">
+                        R$ 300 - 500
+                    </div>
+                </div>
+
+                <!-- Site Multi Páginas -->
+                <div class="grid grid-cols-3 hover:bg-neutral-200 transition-colors">
+                    <div class="px-6 py-4 font-medium text-gray-900">
+                        Site Multi Páginas
+                    </div>
+                    <div class="px-6 py-4 text-gray-700">
+                        Site Institucional (Até 5 páginas, responsivo)
+                    </div>
+                    <div class="px-6 py-4 text-gray-900 font-semibold">
+                        R$ 600 - 1.200
+                    </div>
+                </div>
+
+                <!-- Sistema com BD -->
+                <div class="grid grid-cols-3 hover:bg-neutral-200 transition-colors">
+                    <div class="px-6 py-4 font-medium text-gray-900">
+                        Sistema com BD
+                    </div>
+                    <div class="px-6 py-4 text-gray-700">
+                        Ex.: Cadastro/Login, Painel Administrativo
+                    </div>
+                    <div class="px-6 py-4 text-gray-900 font-semibold">
+                        R$ 1.200 - 2.500
+                    </div>
+                </div>
+
+                <!-- API/Integração -->
+                <div class="grid grid-cols-3 hover:bg-neutral-200 transition-colors">
+                    <div class="px-6 py-4 font-medium text-gray-900">
+                        API/Integração
+                    </div>
+                    <div class="px-6 py-4 text-gray-700">
+                        Integração de Sistemas, Consumo de APIs
+                    </div>
+                    <div class="px-6 py-4 text-gray-900 font-semibold">
+                        R$ 800 - 1.500
+                    </div>
+                </div>
+
+                <!-- Manutenção e Suporte -->
+                <div class="grid grid-cols-3 hover:bg-neutral-200 transition-colors">
+                    <div class="px-6 py-4 font-medium text-gray-900">
+                        Manutenção e Suporte
+                    </div>
+                    <div class="px-6 py-4 text-gray-700">
+                        Ajustes, correções e melhorias contínuas.
+                    </div>
+                    <div class="px-6 py-4 text-gray-900 font-semibold">
+                        R$ 50 - R$ 100/<br>hora
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer com texto em itálico -->
+            <div class="px-6 py-4 bg-gray-50 border-t">
+                <p class="text-sm text-gray-600 italic">
+                    <em>Quer algo mas não se encaixa nessa lista? Veja os planos Personalizados!</em>
+                </p>
+            </div>
+        </div>
+
+        <div class="max-w-4xl mx-auto mb-8 text-center">
+            <h2 class="nova-round text-3xl md:text-4xl font-bold text-gray-800 mb-4 ">
+                — Demonstrações —
+            </h2>
+        </div>
+
+        <div class="flex justify-center">
+            <!-- Imagem de Exemplo  -->
+            <button data-modal-target="exemplo-fullstack-modal" data-modal-toggle="exemplo-fullstack-modal"
+                type="button">
+                <img src="./images/estrelas.jpg" alt="Exemplo de Site Full Stack"
+                    class="rounded-lg shadow-lg mb-8 h-64 hover:h-72 transition-all duration-300">
+            </button>
+        </div>
+
+        <!-- Modal da Imagem de exemplo -->
+        <div id="exemplo-fullstack-modal" tabindex="-1" aria-hidden="true"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-2xl max-h-full">
+                <!-- Modal content -->
+                <div class="relative bg-white rounded-lg shadow-sm dark:bg-gray-600">
+                    <!-- Modal header -->
+                    <div
+                        class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-500 border-gray-200">
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                            Inserir Nome do Projeto
+                        </h3>
+                        <button type="button"
+                            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                            data-modal-hide="exemplo-fullstack-modal">
+                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 14 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                            </svg>
+                            <span class="sr-only">Close modal</span>
+                        </button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="p-4 md:p-5 space-y-4">
+                        <p class="text-white">Inserir o video do projeto e modificar a pagina do fundo</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-black h-auto" id="edicao-video-section">
+        <div class="max-w-4xl mx-auto mb-8 text-center">
+            <h2 class="nova-round text-3xl md:text-4xl font-bold text-white mb-4 pt-16">
+                — EDIÇÃO DE VÍDEO —
+            </h2>
+            <p class="nova-round text-base md:text-lg text-white leading-relaxed max-w-3xl mx-auto">
+                Transforme suas ideias em conteúdo impactante com cortes,
+                efeitos e edições criativas para qualquer plataforma. Tem
+                algo em mente? Por que não tentar!
+            </p>
+        </div>
+        <div class="max-w-4xl mx-auto bg-black rounded-lg shadow-lg overflow-hidden py-6 poppins">
+            <!-- Header da Tabela -->
+            <div class="grid grid-cols-3 bg-black border-b gap-x-3">
+                <div class="px-6 py-4 bg-gray-400 text-black font-semibold text-center rounded-xl">
+                    Serviço
+                </div>
+                <div class="px-6 py-4 bg-gray-400 text-black font-semibold text-center rounded-xl">
+                    Descrição
+                </div>
+                <div class="px-6 py-4 bg-green-500 text-black font-semibold text-center rounded-xl">
+                    Preços
+                </div>
+            </div>
+
+            <!-- Linhas da Tabela -->
+            <div class="divide-y divide-gray-800">
+                <!-- Edição Simples -->
+                <div class="grid grid-cols-3 hover:bg-neutral-900 transition-colors">
+                    <div class="px-6 py-4 font-medium text-white">
+                        Edição Simples
+                    </div>
+                    <div class="px-6 py-4 text-white">
+                        Cortes, legendas básicas, música de fundo.
+                    </div>
+                    <div class="px-6 py-4 text-white font-semibold">
+                        R$ 30 - 60 (Até 10 min)
+                    </div>
+                </div>
+
+                <!-- Video para Redes Sociais -->
+                <div class="grid grid-cols-3 hover:bg-neutral-900 transition-colors">
+                    <div class="px-6 py-4 font-medium text-white">
+                        Vídeos para Redes Sociais
+                    </div>
+                    <div class="px-6 py-4 text-white">
+                        Edição rápida para Tiktok, Reels, Shorts.
+                    </div>
+                    <div class="px-6 py-4 text-white font-semibold">
+                        R$ 10 - 100 por vídeo
+                    </div>
+                </div>
+
+                <!-- Edição Completa -->
+                <div class="grid grid-cols-3 hover:bg-neutral-900 transition-colors">
+                    <div class="px-6 py-4 font-medium text-white">
+                        Edição Completa
+                    </div>
+                    <div class="px-6 py-4 text-white">
+                        Cortes, efeitos, transições e Motion Básico
+                    </div>
+                    <div class="px-6 py-4 text-white font-semibold">
+                        R$ 150 - 300
+                    </div>
+                </div>
+
+                <!-- Pacote Mensal -->
+                <div class="grid grid-cols-3 hover:bg-neutral-900 transition-colors">
+                    <div class="px-6 py-4 font-medium text-white">
+                        Pacote Mensal
+                    </div>
+                    <div class="px-6 py-4 text-white">
+                        Até 10 vídeos/mês, edição completa.
+                    </div>
+                    <div class="px-6 py-4 text-white font-semibold">
+                        R$ 900 - 1.200
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer com texto em itálico -->
+            <div class="px-6 py-4 bg-black border-t">
+                <p class="text-sm text-white italic">
+                    <em>Quer algo mas não se encaixa nessa lista? Veja os planos Personalizados!</em>
+                </p>
+            </div>
+        </div>
+
+        <div class="max-w-4xl mx-auto mb-8 text-center">
+            <h2 class="nova-round text-3xl md:text-4xl font-bold text-white mb-4">
+                — Demonstrações —
+            </h2>
+        </div>
+
+        <div class="flex justify-center">
+            <!-- Imagem de Exemplo  -->
+            <button data-modal-target="exemplo-edicaovideo-modal" data-modal-toggle="exemplo-edicaovideo-modal"
+                type="button">
+                <img src="./images/estrelas.jpg" alt="Exemplo de Site Full Stack"
+                    class="rounded-lg shadow-lg mb-8 h-64 hover:h-72 transition-all duration-300">
+            </button>
+        </div>
+
+        <!-- Modal da Imagem de exemplo -->
+        <div id="exemplo-edicaovideo-modal" tabindex="-1" aria-hidden="true"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-2xl max-h-full">
+                <!-- Modal content -->
+                <div class="relative bg-white rounded-lg shadow-sm dark:bg-gray-600">
+                    <!-- Modal header -->
+                    <div
+                        class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-500 border-gray-200">
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                            Inserir Nome do Projeto Edicao Video
+                        </h3>
+                        <button type="button"
+                            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                            data-modal-hide="exemplo-edicaovideo-modal">
+                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 14 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                            </svg>
+                            <span class="sr-only">Close modal</span>
+                        </button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="p-4 md:p-5 space-y-4">
+                        <p class="text-white">Inserir o video do projeto e modificar a pagina do fundo</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#444576] h-auto" id="personalizado-section">
+        <div class="max-w-4xl mx-auto pb-8 text-center">
+            <h2 class="nova-round text-3xl md:text-4xl font-bold text-white mb-4 pt-16">
+                — PERSONALIZADO —
+            </h2>
+            <p class="nova-round text-base md:text-lg text-white leading-relaxed max-w-3xl mx-auto">
+                Você procura por algo que não está nas opções acima
+                ou quer algo completamente diferente? Não se preocupe!
+                A hora de transformar sua ideia em realidade é agora!
+            </p>
+        </div>
+        <div class="max-w-4xl mx-auto bg-[#444576] rounded-lg overflow-hidden py-6 poppins">
+            <!-- Header da Tabela -->
+            <div class="grid grid-cols-3 bg-[#444576] border-b gap-x-3">
+                <div class="px-6 py-4 bg-[#C7D7FF] text-black font-semibold text-center rounded-xl">
+                    Serviço
+                </div>
+                <div class="px-6 py-4 bg-[#B7B7B7] text-black font-semibold text-center rounded-xl">
+                    Descrição
+                </div>
+                <div class="px-6 py-4 bg-[#A1DBC0] text-black font-semibold text-center rounded-xl">
+                    Preços
+                </div>
+            </div>
+
+            <!-- Linhas da Tabela -->
+            <div class="divide-y divide-[#535592]">
+                <!-- Consultoria Tecnica -->
+                <div class="grid grid-cols-3 hover:bg-[#444576] transition-colors">
+                    <div class="px-6 py-4 font-medium text-white">
+                        Consultoria Técnica
+                    </div>
+                    <div class="px-6 py-4 text-white">
+                        Auxílio em projetos, dúvidas e suporte.
+                    </div>
+                    <div class="px-6 py-4 text-white font-semibold">
+                        R$ 70 – R$ 120/hora
+                    </div>
+                </div>
+
+                <!-- Design Básico -->
+                <div class="grid grid-cols-3 hover:bg-[#444576] transition-colors">
+                    <div class="px-6 py-4 font-medium text-white">
+                        Design Básico
+                    </div>
+                    <div class="px-6 py-4 text-white">
+                        Banners, thumbnails, ajustes gráficos.
+                    </div>
+                    <div class="px-6 py-4 text-white font-semibold">
+                        R$ 50 – R$ 120
+                    </div>
+                </div>
+
+                <!-- Projetos Personalizados -->
+                <div class="grid grid-cols-3 hover:bg-[#444576] transition-colors">
+                    <div class="px-6 py-4 font-medium text-white">
+                        Projetos Personalizados
+                    </div>
+                    <div class="px-6 py-4 text-white">
+                        Negociado de acordo com a complexidade.
+                    </div>
+                    <div class="px-6 py-4 text-white font-semibold">
+                        Orçamento sob consulta
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-4xl mx-auto pb-8 text-center">
+            <h2 class="nova-round text-3xl md:text-4xl font-bold text-white mb-4 pt-16">
+                — ENTRE EM CONTATO! —
+            </h2>
+            <p class="nova-round text-base md:text-lg text-white leading-relaxed max-w-3xl mx-auto">
+                Quer fechar negócio ou quer saber mais? Por que não entra em
+                contato comigo? Lembre-se que temos <span class="underline hover:text-neutral-300 cursor-pointer"><a
+                        data-modal-target="tos-modal" data-modal-toggle="tos-modal">Termos de Serviço!</a></span>
+            </p>
+        </div>
+
+        <div class="flex justify-center pb-44 mt-14">
+            <a href="https://wa.me/554198181788" target="_blank"
+                class="bg-green-500 text-white text-xl px-6 py-3 rounded-lg hover:bg-green-600 transition-colors">
+                <img src="./images/page2/whatsappicon.png" alt="WhatsApp Icon" class="inline-block w-9 h-9 mr-2">
+                WhatsApp
+            </a>
+        </div>
+
+        <!-- TERMOS DE SERVIÇO -->
+        <div id="tos-modal" tabindex="-1" aria-hidden="true"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-2xl max-h-full">
+                <!-- Modal content -->
+                <div class="relative bg-white rounded-lg shadow-sm dark:bg-gray-600">
+                    <!-- Modal header -->
+                    <div
+                        class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-500 border-gray-200">
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                            Termos de Serviço
+                        </h3>
+                        <button type="button"
+                            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                            data-modal-hide="tos-modal">
+                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 14 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                            </svg>
+                            <span class="sr-only">Close modal</span>
+                        </button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="p-4 md:p-5 space-y-4 overflow-auto">
+                        <p class="text-white">
+                            <span class="font-bold">1. Escopo dos Serviços</span> <br>
+
+                            - Os serviços oferecidos incluem desenvolvimento FullStack (sites, sistemas e integrações),
+                            edição de vídeos e serviços extras/personalizados. <br>
+                            - O escopo de cada projeto será definido previamente em orçamento aceito pelo
+                            cliente. <br>
+                            <br>
+                            <span class="font-bold">2. Orçamento e Pagamento</span> <br>
+
+                            - Os valores apresentados na tabela são preços de referência, podendo variar conforme a
+                            complexidade do projeto. <br>
+
+                            - O pagamento deve ser realizado em até 2 etapas: <br>
+
+                            - 50% antecipado (para início do projeto). <br>
+
+                            - 50% após a entrega, antes da disponibilização final dos arquivos/produto. <br>
+
+                            - Serviços avulsos (como manutenção, consultoria ou cortes simples de vídeo) podem exigir
+                            pagamento integral adiantado. <br>
+                            <br>
+                            <span class="font-bold">3. Prazos de Entrega</span> <br>
+
+                            - O prazo será acordado com o cliente antes do início do projeto. <br>
+
+                            - Alterações no escopo durante o desenvolvimento poderão estender o prazo e reajustar o
+                            valor. <br>
+                            <br>
+                            <span class="font-bold">4. Revisões e Alterações</span> <br>
+
+                            - Cada projeto inclui até 2 rodadas de revisões sem custo adicional. <br>
+
+                            - Alterações extras, fora do escopo inicial, serão cobradas à parte. <br>
+                            <br>
+                            <span class="font-bold">5. Direitos Autorais e Uso</span> <br>
+
+                            - O cliente terá direito de uso integral sobre o produto final após o pagamento completo.
+                            <br>
+
+                            - O prestador mantém o direito de exibir o trabalho em portfólio (salvo quando houver acordo
+                            de confidencialidade). <br>
+
+                            - O cliente é responsável por fornecer materiais (imagens, músicas, textos, logotipos) sem
+                            violar direitos autorais. <br>
+                            <br>
+                            <span class="font-bold">6. Cancelamentos e Reembolsos</span> <br>
+
+                            - Caso o cliente opte por cancelar o projeto após o início, o valor já pago não será
+                            reembolsado. <br>
+
+                            - Se o prestador não conseguir cumprir com a entrega sem justificativa, o cliente terá
+                            direito
+                            ao reembolso proporcional. <br>
+                            <br>
+                            <span class="font-bold">7. Suporte e Manutenção</span> <br>
+
+                            - Projetos de desenvolvimento incluem um período de 7 dias de suporte gratuito após a
+                            entrega. <br>
+
+                            - Suporte ou manutenção estendida pode ser contratada separadamente. <br>
+                            <br>
+                            <span class="font-bold">8. Comunicação</span> <br>
+
+                            - Toda comunicação e alinhamento do projeto devem ocorrer pelos canais definidos (e-mail,
+                            Discord ou outra plataforma acordada). <br>
+
+                            - O cliente deve fornecer as informações necessárias para o andamento do projeto em tempo
+                            hábil. <br>
+                            <br>
+                            <span class="font-bold">9. Aceitação</span> <br>
+
+                            - Ao contratar qualquer serviço, o cliente confirma que leu, compreendeu e concorda com os
+                            Termos de Serviço aqui descritos.
+                        </p>
+
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                        <button data-modal-hide="tos-modal" type="button"
+                            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Entendo os Termos e Condições</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+</html>
